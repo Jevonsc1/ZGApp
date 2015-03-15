@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  ZGApp
+//
+//  Created by Jevons on 14/12/20.
+//  Copyright (c) 2014年 Jevons. All rights reserved.
+//
+
+#ifndef ZGApp_PrefixHeader_pch
+#define ZGApp_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#define JWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define Blue JWColor(66, 181, 247)
+#define BookDetailGap 5
+#define BlurWithRadius  50.0f
+#define tagFont [UIFont systemFontOfSize:18]
+#define cellnameFont [UIFont systemFontOfSize:17]
+#define summaryFont [UIFont systemFontOfSize:15]
+#define celldetailFont [UIFont systemFontOfSize:14]
+#define NotificationGap  10
+
+#define starMaxNum 10
+
+
+#define meTopGap  30
+#define btnGap  15
+
+
+#define ScreenviewWidth [UIScreen mainScreen].bounds.size.width
+
+
+
+#define SearchTagCellHeight 130
