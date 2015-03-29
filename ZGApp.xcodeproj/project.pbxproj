@@ -172,6 +172,7 @@
 		FAC75A5C1AA5A71E0097CC55 /* ZGFootCmtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC75A5B1AA5A71E0097CC55 /* ZGFootCmtCell.m */; };
 		FAC75A631AA5C9490097CC55 /* ZGMyBookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC75A611AA5C9490097CC55 /* ZGMyBookListCell.m */; };
 		FAC75A641AA5C9490097CC55 /* ZGMyBookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC75A621AA5C9490097CC55 /* ZGMyBookListCell.xib */; };
+		FADFC3C81AC7BD8B00EFD12A /* ZGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FADFC3C71AC7BD8B00EFD12A /* ZGHttpTool.m */; };
 		FAE1062E1A8B1AE000F06213 /* UIView+AnchorP.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE1062D1A8B1AE000F06213 /* UIView+AnchorP.m */; };
 		FAE106311A905A9B00F06213 /* ZGRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE106301A905A9B00F06213 /* ZGRegView.m */; };
 		FAE106341A9448E700F06213 /* ZGBaceInfoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE106331A9448E700F06213 /* ZGBaceInfoTextField.m */; };
@@ -537,6 +538,8 @@
 		FAC75A601AA5C9490097CC55 /* ZGMyBookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMyBookListCell.h; sourceTree = "<group>"; };
 		FAC75A611AA5C9490097CC55 /* ZGMyBookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMyBookListCell.m; sourceTree = "<group>"; };
 		FAC75A621AA5C9490097CC55 /* ZGMyBookListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZGMyBookListCell.xib; sourceTree = "<group>"; };
+		FADFC3C61AC7BD8B00EFD12A /* ZGHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGHttpTool.h; sourceTree = "<group>"; };
+		FADFC3C71AC7BD8B00EFD12A /* ZGHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGHttpTool.m; sourceTree = "<group>"; };
 		FAE1062C1A8B1AE000F06213 /* UIView+AnchorP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnchorP.h"; sourceTree = "<group>"; };
 		FAE1062D1A8B1AE000F06213 /* UIView+AnchorP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnchorP.m"; sourceTree = "<group>"; };
 		FAE1062F1A905A9B00F06213 /* ZGRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRegView.h; sourceTree = "<group>"; };
@@ -760,6 +763,7 @@
 		FA2AEB141A708F0B00A88C02 /* 搜索 */ = {
 			isa = PBXGroup;
 			children = (
+				FADFC3C91AC7BE7C00EFD12A /* Tool */,
 				FA2AEB151A708F0B00A88C02 /* Controller */,
 				FA2AEB161A708F0B00A88C02 /* Model */,
 				FA2AEB171A708F0B00A88C02 /* View */,
@@ -1268,6 +1272,8 @@
 		FAAFB3791A45346B00A89801 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				FADFC3C61AC7BD8B00EFD12A /* ZGHttpTool.h */,
+				FADFC3C71AC7BD8B00EFD12A /* ZGHttpTool.m */,
 				FA990EEF1A887BEF003E9E99 /* IBActionSheet.h */,
 				FA990EF01A887BEF003E9E99 /* IBActionSheet.m */,
 				FA5806E11A6E594000D0CE7B /* Pic */,
@@ -1459,6 +1465,13 @@
 				FAC75A361AA4A3EE0097CC55 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FADFC3C91AC7BE7C00EFD12A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		FAFB3A7A1A805B1200362B97 /* 我的收藏 */ = {
@@ -1867,6 +1880,7 @@
 				FA08FE4B1A79E942000F0F21 /* SegmentBtn.m in Sources */,
 				FA6851971A7F2B100043A2AB /* ZGMyTagsView.m in Sources */,
 				FA5806D21A6E375900D0CE7B /* NSObject+MJMember.m in Sources */,
+				FADFC3C81AC7BD8B00EFD12A /* ZGHttpTool.m in Sources */,
 				FA4FD21C1A87148800B65DC5 /* ZGBookComCell.m in Sources */,
 				131675081AA6F72400FE10EE /* ZGUserHeaderView.m in Sources */,
 				FAAFB3851A45346B00A89801 /* TBTabBarController.m in Sources */,
