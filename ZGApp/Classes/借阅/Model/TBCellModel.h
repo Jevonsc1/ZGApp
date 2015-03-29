@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ZGBook.h"
 @interface TBCellModel : NSObject
 @property(nonatomic,copy)NSString* bookname;
 @property(nonatomic,copy)NSString* author;
 @property(nonatomic,copy)NSString* category;
 @property(nonatomic,strong)NSArray* friendname;
-@property(nonatomic,copy)NSString* bookpic;
+
 +(instancetype)initWithDict:(NSDictionary*)dict;
 
 @end

@@ -15,7 +15,7 @@
 {
     // 1.创建请求管理对象
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
+    mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
     // 2.发送请求
     [mgr POST:url parameters:params
       success:^(AFHTTPRequestOperation *operation, id responseObject) {

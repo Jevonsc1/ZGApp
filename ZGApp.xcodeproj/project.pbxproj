@@ -12,6 +12,11 @@
 		131675081AA6F72400FE10EE /* ZGUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131675071AA6F72400FE10EE /* ZGUserHeaderView.m */; };
 		1316750B1AA6FF3300FE10EE /* ZGUserFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1316750A1AA6FF3300FE10EE /* ZGUserFooterView.m */; };
 		131675101AA7014100FE10EE /* ZGUserOneShelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1316750F1AA7014100FE10EE /* ZGUserOneShelf.m */; };
+		281DDF981AC8195D00ACF81C /* ZGAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DDF971AC8195D00ACF81C /* ZGAccount.m */; };
+		281DDF9C1AC81D9700ACF81C /* ZGAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DDF9B1AC81D9700ACF81C /* ZGAccountTool.m */; };
+		281DDF9F1AC81F3600ACF81C /* ZGAccountRegParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DDF9E1AC81F3600ACF81C /* ZGAccountRegParam.m */; };
+		281DDFA21AC8203D00ACF81C /* ZGAccountRegResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DDFA11AC8203D00ACF81C /* ZGAccountRegResult.m */; };
+		281DDFA51AC8353000ACF81C /* ZGUserDetailParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DDFA41AC8353000ACF81C /* ZGUserDetailParam.m */; };
 		FA08FE451A79D3CC000F0F21 /* ZGNotifiationSegView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08FE441A79D3CC000F0F21 /* ZGNotifiationSegView.m */; };
 		FA08FE481A79E714000F0F21 /* LittLeBlueRow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08FE471A79E714000F0F21 /* LittLeBlueRow.m */; };
 		FA08FE4B1A79E942000F0F21 /* SegmentBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08FE4A1A79E942000F0F21 /* SegmentBtn.m */; };
@@ -221,6 +226,16 @@
 		1316750A1AA6FF3300FE10EE /* ZGUserFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGUserFooterView.m; sourceTree = "<group>"; };
 		1316750E1AA7014100FE10EE /* ZGUserOneShelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGUserOneShelf.h; sourceTree = "<group>"; };
 		1316750F1AA7014100FE10EE /* ZGUserOneShelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGUserOneShelf.m; sourceTree = "<group>"; };
+		281DDF961AC8195D00ACF81C /* ZGAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAccount.h; sourceTree = "<group>"; };
+		281DDF971AC8195D00ACF81C /* ZGAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAccount.m; sourceTree = "<group>"; };
+		281DDF9A1AC81D9700ACF81C /* ZGAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZGAccountTool.h; path = Tool/ZGAccountTool.h; sourceTree = "<group>"; };
+		281DDF9B1AC81D9700ACF81C /* ZGAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZGAccountTool.m; path = Tool/ZGAccountTool.m; sourceTree = "<group>"; };
+		281DDF9D1AC81F3600ACF81C /* ZGAccountRegParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAccountRegParam.h; sourceTree = "<group>"; };
+		281DDF9E1AC81F3600ACF81C /* ZGAccountRegParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAccountRegParam.m; sourceTree = "<group>"; };
+		281DDFA01AC8203D00ACF81C /* ZGAccountRegResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAccountRegResult.h; sourceTree = "<group>"; };
+		281DDFA11AC8203D00ACF81C /* ZGAccountRegResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAccountRegResult.m; sourceTree = "<group>"; };
+		281DDFA31AC8353000ACF81C /* ZGUserDetailParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGUserDetailParam.h; sourceTree = "<group>"; };
+		281DDFA41AC8353000ACF81C /* ZGUserDetailParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGUserDetailParam.m; sourceTree = "<group>"; };
 		FA08FE431A79D3CC000F0F21 /* ZGNotifiationSegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGNotifiationSegView.h; sourceTree = "<group>"; };
 		FA08FE441A79D3CC000F0F21 /* ZGNotifiationSegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGNotifiationSegView.m; sourceTree = "<group>"; };
 		FA08FE461A79E714000F0F21 /* LittLeBlueRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittLeBlueRow.h; sourceTree = "<group>"; };
@@ -660,6 +675,22 @@
 				FAFFE11C1AAB270A005AD6B7 /* ZGUserNav.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		281DDF991AC81CDF00ACF81C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				281DDF9A1AC81D9700ACF81C /* ZGAccountTool.h */,
+				281DDF9B1AC81D9700ACF81C /* ZGAccountTool.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		281DDFA61AC83F6200ACF81C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		FA16F1A41A76589C003591E1 /* 书籍详情 */ = {
@@ -1227,6 +1258,7 @@
 		FAAFB36D1A45346B00A89801 /* 借阅 */ = {
 			isa = PBXGroup;
 			children = (
+				281DDFA61AC83F6200ACF81C /* Tool */,
 				FAAFB36E1A45346B00A89801 /* Controller */,
 				FAAFB3711A45346B00A89801 /* Model */,
 				FAAFB3741A45346B00A89801 /* View */,
@@ -1356,6 +1388,7 @@
 		FAC3C9A41A84F5C800B5A2FA /*  登录 */ = {
 			isa = PBXGroup;
 			children = (
+				281DDF991AC81CDF00ACF81C /* Tool */,
 				FAC3C9A51A84F5C800B5A2FA /* Controller */,
 				FAC3C9A61A84F5C800B5A2FA /* Model */,
 				FAC3C9A71A84F5C800B5A2FA /* View */,
@@ -1375,6 +1408,14 @@
 		FAC3C9A61A84F5C800B5A2FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				281DDF961AC8195D00ACF81C /* ZGAccount.h */,
+				281DDF971AC8195D00ACF81C /* ZGAccount.m */,
+				281DDF9D1AC81F3600ACF81C /* ZGAccountRegParam.h */,
+				281DDF9E1AC81F3600ACF81C /* ZGAccountRegParam.m */,
+				281DDFA01AC8203D00ACF81C /* ZGAccountRegResult.h */,
+				281DDFA11AC8203D00ACF81C /* ZGAccountRegResult.m */,
+				281DDFA31AC8353000ACF81C /* ZGUserDetailParam.h */,
+				281DDFA41AC8353000ACF81C /* ZGUserDetailParam.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1776,6 +1817,7 @@
 				FA2AEB251A70B99A00A88C02 /* BookPic.m in Sources */,
 				FAFFE1411AAC4564005AD6B7 /* SDPieLoopProgressView.m in Sources */,
 				FA16F1AA1A7658D0003591E1 /* ZGBookDetailController.m in Sources */,
+				281DDF9F1AC81F3600ACF81C /* ZGAccountRegParam.m in Sources */,
 				FA5806001A6E326C00D0CE7B /* MBProgressHUD+MJ.m in Sources */,
 				1316750B1AA6FF3300FE10EE /* ZGUserFooterView.m in Sources */,
 				FAE106341A9448E700F06213 /* ZGBaceInfoTextField.m in Sources */,
@@ -1813,6 +1855,7 @@
 				FAFFE1471AAC8236005AD6B7 /* ZGBookNav.m in Sources */,
 				FAC75A3A1AA4A3EE0097CC55 /* AFNetworkReachabilityManager.m in Sources */,
 				FA5806401A6E327D00D0CE7B /* SDImageCache.m in Sources */,
+				281DDFA51AC8353000ACF81C /* ZGUserDetailParam.m in Sources */,
 				FA5806451A6E327D00D0CE7B /* SDWebImageManager.m in Sources */,
 				FA3F3B631A7476750012ECB0 /* ZGBookResult.m in Sources */,
 				FAC75A4D1AA5A2550097CC55 /* ZGFootBookFrame.m in Sources */,
@@ -1837,6 +1880,7 @@
 				FAAFB3841A45346B00A89801 /* TBNavigationController.m in Sources */,
 				FAC75A631AA5C9490097CC55 /* ZGMyBookListCell.m in Sources */,
 				FA5806D11A6E375900D0CE7B /* NSObject+MJKeyValue.m in Sources */,
+				281DDF9C1AC81D9700ACF81C /* ZGAccountTool.m in Sources */,
 				131675051AA6F6B800FE10EE /* ZGHeaderFrame.m in Sources */,
 				FA08FE4E1A7A1D4F000F0F21 /* ZGNofCellData.m in Sources */,
 				FAFFE12C1AAC2F6F005AD6B7 /* MJRefreshFooterView.m in Sources */,
@@ -1851,6 +1895,7 @@
 				FAAFB3861A45346B00A89801 /* TBTabBarButtton.m in Sources */,
 				FAC75A201AA42EE40097CC55 /* ZGOrder.m in Sources */,
 				FA5806DF1A6E4DE700D0CE7B /* IMCacheCell.m in Sources */,
+				281DDFA21AC8203D00ACF81C /* ZGAccountRegResult.m in Sources */,
 				FA08FE451A79D3CC000F0F21 /* ZGNotifiationSegView.m in Sources */,
 				FA58063E1A6E327D00D0CE7B /* MKAnnotationView+WebCache.m in Sources */,
 				FA16F1C51A778907003591E1 /* ZGNavigationBackView.m in Sources */,
@@ -1867,6 +1912,7 @@
 				FA16F1D11A78BF74003591E1 /* BookDetailBottomView.m in Sources */,
 				FA5806411A6E327D00D0CE7B /* SDWebImageCompat.m in Sources */,
 				FA16F1A11A7657F9003591E1 /* UIImage+ImageEffects.m in Sources */,
+				281DDF981AC8195D00ACF81C /* ZGAccount.m in Sources */,
 				FAFFE13E1AAC4564005AD6B7 /* SDBallProgressView.m in Sources */,
 				FA5806761A6E329500D0CE7B /* FMDatabaseAdditions.m in Sources */,
 				FA3F3B511A7292290012ECB0 /* IMChatToolBar.m in Sources */,

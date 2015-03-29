@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface ZGUser : NSObject
+
 @property(nonatomic,copy)NSString* userName;
 @property(nonatomic,copy)NSString* userIntro;
 @property(nonatomic,strong)NSArray* tags;

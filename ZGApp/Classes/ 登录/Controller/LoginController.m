@@ -14,7 +14,11 @@
 #import "TBTabBarController.h"
 #import "AFNetworking.h"
 #import "ZGRegView.h"
-
+#import "ZGAccount.h"
+#import "ZGAccountTool.h"
+#import "ZGAccountRegParam.h"
+#import "MBProgressHUD.h"
+#import "ZGHttpTool.h"
 #import "NSString+Password.h"
 @interface LoginController ()<LoginBtnViewDelegate,ZGLoginViewDelegate,ZGRegViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property(nonatomic,weak)UIImageView* backImg;
@@ -30,6 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     UIImageView* backImg=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"background_ip5"]];
     backImg.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:backImg];
@@ -48,6 +53,11 @@
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [UIApplication sharedApplication].statusBarHidden=YES;
 }
+
+- (void)login{
+    ZGAccount *ac = [[ZGAccount alloc] init];
+}
+
 /**
  *  登录第二页的登录键
  */
@@ -153,8 +163,6 @@
         }];
         
     }];
-
-    
 }
 -(void)LogBtnView:(LoginBtnView *)View
 {
@@ -253,8 +261,6 @@
 
 -(void)loginBtnClick
 {
-
-   
     self.view.window.rootViewController=[[TBTabBarController alloc]init];
     [UIApplication sharedApplication].statusBarHidden=NO;
 }
@@ -265,17 +271,16 @@
  */
 -(void)registerBtnClick:(UIButton*)btn
 {
-
-    
     [UIView animateWithDuration:0.6 animations:^{
         self.regView.AccountView.layer.opacity=0;
         self.regView.AccountView.transform=CGAffineTransformMakeTranslation(-self.regView.frame.size.width, 0);
         self.regView.BaseInfoView.layer.opacity=1;
         self.regView.BaseInfoView.transform=CGAffineTransformMakeTranslation(-self.regView.frame.size.width, 0);
-        
+        [self comfirmToReg];
+
         [self.loginBtn setTitle:@"下一步" forState:UIControlStateNormal];
         [self.loginBtn removeTarget:self action:@selector(registerBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.loginBtn addTarget:self action:@selector(comfirmToReg) forControlEvents:UIControlEventTouchUpInside];
+        [self.loginBtn addTarget:self action:@selector(updateUserDetail) forControlEvents:UIControlEventTouchUpInside];
         self.regView.backBtn.tag=2;
     }];
     
@@ -287,17 +292,41 @@
  */
 -(void)comfirmToReg
 {
-    NSLog(@"123");
-    AFHTTPRequestOperationManager* mgr=[AFHTTPRequestOperationManager manager];
-    NSMutableDictionary* params=[NSMutableDictionary dictionary];
-    params[@"user_name"]=self.regView.emailText.text;
-    params[@"user_passwd"]=[[self.regView.pswText.text MD5] SHA1];
+    ZGAccountRegParam * param = [[ZGAccountRegParam alloc] init];
+    param.user_name = self.regView.emailText.text;
+    param.user_passwd = [[self.regView.pswText.text MD5] SHA1];
+//    NSLog(@"%@ %@", param.user_name, param.user_passwd);
     
-    [mgr GET:@"http://120.24.81.123/zhigeng/index.php?c=login&m=register" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@",responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+    [ZGAccountTool regiserWithParams:param success:^(ZGAccount *account) {
+        [ZGAccountTool saveAccount:account];
+//        NSLog(@"%@", NSHomeDirectory());
+        NSLog(@"%@", [ZGAccountTool getAccount].user_name);
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
     }];
+    
+    
+}
+
+-(void)updateUserDetail{
+    ZGUserDetailParam * param = [[ZGUserDetailParam alloc] init];
+    param.user_id = [ZGAccountTool getAccount].user_id;
+    param.token = [ZGAccountTool getAccount].token;
+    param.name = self.regView.nickName.text;
+    if (self.regView.maleBtn.isSelected) {
+        param.sex = 1;
+    }else if (self.regView.femaleBtn.isSelected) {
+        param.sex = 2;
+    }
+    param.introduction = self.regView.profileText.text;
+    
+    [ZGAccountTool setUserDetail:param success:^(id json) {
+        NSLog(@"success");
+        NSLog(@"%@", json);
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
+//    NSLog(@"update");
 }
 
 -(void)RegViewWithCameraBtn:(ZGRegView *)RegView btn:(NSInteger)btnNum
