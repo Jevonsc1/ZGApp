@@ -13,7 +13,7 @@
 @property(nonatomic,copy)NSString* author;
 @property(nonatomic,copy)NSString* category;
 @property(nonatomic,strong)NSArray* friendname;
-
+@property(nonatomic,copy)NSString* bookpic;
 +(instancetype)initWithDict:(NSDictionary*)dict;
 
 @end
