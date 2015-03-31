@@ -22,7 +22,7 @@
 #import "UIImage+ImageEffects.h"
 
 #import "ZGMyBookListCell.h"
-#define segHeight 85
+#define segHeight 40
 @interface MySelfController ()<ZGMyNavBarDelegate,ZGMyTopViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,ZGMySegViewDelegate>
 @property(nonatomic,strong)ZGMyTopView* topView;
 
@@ -81,11 +81,12 @@
     
     [self setupProcess];
 //      [self setupTopView];
+  
     
     UIImage* image=[UIImage imageNamed:@"lobo"];
     image=[image applyBlurWithRadius:5.0 tintColor:nil saturationDeltaFactor:1 maskImage:nil];
     UIImageView* imageview=[[UIImageView alloc]initWithImage:image];
-    imageview.frame=CGRectMake(0, 0, 320, 380);
+    imageview.frame=CGRectMake(0, 0, self.view.bounds.size.width, 400);
     UIView* view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.topF.viewHeight)];
     [view addSubview:imageview];
     self.tableView.backgroundView=view;
@@ -213,7 +214,7 @@
     if (section==0) {
         
 
-        return 1;
+        return 0;
     }
     else{
         return self.curArray.count;
@@ -290,7 +291,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section==0) {
-        return 0.001f;
+        return 0;
     }
     else
     {

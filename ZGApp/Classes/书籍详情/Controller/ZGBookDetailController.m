@@ -18,6 +18,7 @@
 #import "ZGBookDetailComCell.h"
 
 #import "ZGBookNav.h"
+#import "ZGBookComment.h"
 
 @interface ZGBookDetailController ()<ZGBookNavDelegate>
 @property(nonatomic,weak)ZGBookDetailBtnView* btnView;
@@ -45,6 +46,8 @@
     
     [self setupNav];
     
+    UINib * nib = [UINib nibWithNibName:@"ZGBookDetailComCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"Jevons"];
     
 }
 
@@ -101,7 +104,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     if (section==0) {
-        return 1;
+        return 0;
     }
     else {
       return 6;
@@ -132,6 +135,8 @@
     }
     else{
     ZGBookDetailComCell* cell=[ZGBookDetailComCell initWithTableView:tableView];
+        ZGBookComment* comment=[[ZGBookComment alloc]init];
+        cell.comment=comment;
      return cell;
     }
    
@@ -158,7 +163,7 @@
     }
     else
     {
-        return 80.0f;
+        return 135.0f;
     }
 }
 

@@ -152,7 +152,7 @@
     TBCellModel* model=[[TBCellModel alloc]init];
     model.author=author;
     model.bookname=bookname;
-    model.bookpic=bookpic;
+    model.bookpic = bookpic;
     model.friendname=friendname;
     model.category=category;
     [self.cellArray addObject:model];
@@ -196,7 +196,7 @@
             cell.imageView.image=[UIImage imageNamed:@"page_jieyue_saoyisao"];
             cell.textLabel.text=@"扫一扫";
             cell.detailTextLabel.text=@"书籍条形码快速搜索";
-             cell.detailTextLabel.textColor=[UIColor grayColor];
+            cell.detailTextLabel.textColor=[UIColor grayColor];
         }
     
     return cell;

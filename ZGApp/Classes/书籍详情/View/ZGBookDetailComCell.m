@@ -11,14 +11,6 @@
 @interface ZGBookDetailComCell (){
     
 }
-@property (weak, nonatomic) IBOutlet UIImageView *icon;
-@property (weak, nonatomic) IBOutlet UILabel *author;
-@property (weak, nonatomic) IBOutlet UILabel *commonSchool;
-@property (weak, nonatomic) IBOutlet UILabel *date;
-
-@property (weak, nonatomic) IBOutlet UILabel *content;
-@property (weak, nonatomic) IBOutlet UIButton *comNum;
-@property (weak, nonatomic) IBOutlet UIButton *zanNum;
 
 
 @end
@@ -29,29 +21,30 @@
 {
     static  NSString  *ID = @"Jevons";
     ZGBookDetailComCell  *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[ZGBookDetailComCell alloc]init];
-        UINib * nib = [UINib nibWithNibName:@"ZGBookDetailComCell" bundle:nil];
-        if (nib==nil) {
-            NSLog(@"wrong");
-        }
-        [tableView registerNib:nib forCellReuseIdentifier:ID];
-
-//        cell=[nibs lastObject];
-        cell.icon.image=[UIImage imageNamed:@"menubar_setting"];
-//        cell.author.text=@"郑泓硕";
-        cell.commonSchool.layer.cornerRadius=2.0;
-        cell.date.text=@"昨天";
-        cell.content.text=@"努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评";
-        [cell.zanNum setTitle:@"33" forState:UIControlStateNormal];
-        
-        [cell.comNum setTitle:@"99" forState:UIControlStateNormal];
-        
-        
-    }
+//    if (cell == nil) {
+//        ZGBookDetailComCell *cell=[[ZGBookDetailComCell alloc]init];
+//    }
+    
     return cell;
 }
 
+-(void)setComment:(ZGBookComment *)comment{
+    _comment=comment;
+    self.comSchoolLabel.layer.cornerRadius=10.0f;
+    self.icon.layer.cornerRadius=15;
+    self.icon.image=[UIImage imageNamed:@"menubar_setting"];
+    self.icon.backgroundColor=[UIColor blackColor];
+    //        cell.author.text=@"郑泓硕";
+    
+    self.author.text=@"郑泓硕";
+    self.dateLabel.text=@"昨天";
+    self.content.text=@"努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评努力凑够4行书评";
+    [self.zanBtn setTitle:@"33" forState:UIControlStateNormal];
+    [self.zanBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 10)];
+    [self.comBtn setTitle:@"33" forState:UIControlStateNormal];
+    [self.comBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 10)];
+    
+}
 - (instancetype)init
 {
     self = [super init];

@@ -44,9 +44,9 @@
         self.userInteractionEnabled=YES;
         
         UIView* topView=[[UIView alloc]init];
-        topView.backgroundColor=[UIColor whiteColor];
+        topView.backgroundColor=[UIColor clearColor];
         self.topView=topView;
-        [self addSubview:topView];
+//        [self addSubview:topView];
         
         UIView* bottomView=[[UIView alloc]init];
         bottomView.backgroundColor=[UIColor whiteColor];
@@ -123,8 +123,8 @@
     
     
     
-    self.topView.frame=CGRectMake(0, 0, self.frame.size.width, 40);
-    self.botView.frame=CGRectMake(0, CGRectGetMaxY(self.topView.frame), self.frame.size.width, 45);
+//    self.topView.frame=CGRectMake(0, 0, self.frame.size.width, 40);
+    self.botView.frame=CGRectMake(0, CGRectGetMaxY(self.topView.frame), self.frame.size.width, 40);
     
     
     NSInteger btnCount=self.btnArray.count;
