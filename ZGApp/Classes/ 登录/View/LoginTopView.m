@@ -22,8 +22,6 @@
         [self addSubview:logoView];
 
         self.LogoView=logoView;
-   
-        
     }
     return self;
 }

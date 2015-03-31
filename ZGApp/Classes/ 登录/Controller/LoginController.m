@@ -114,6 +114,7 @@
     CGFloat TopX=(ScreenviewWidth-TopW)*0.5;
     CGFloat TopY=TopH*0.5;
     LoginTopView* TopView=[[LoginTopView alloc]init];
+   
     TopView.frame=CGRectMake(TopX, TopY, TopW, TopH);
     [self.backImg addSubview:TopView];
     self.topView=TopView;
@@ -127,6 +128,7 @@
     CGFloat BotW=self.view.frame.size.width-2*BotX;
     CGFloat BotY=self.view.frame.size.height*0.73;
     LoginBtnView* BotView=[[LoginBtnView alloc]init];
+    
     BotView.delegate=self;
     BotView.frame=CGRectMake(BotX, BotY, BotW, BotH);
     [self.backImg addSubview:BotView];

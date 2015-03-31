@@ -15,7 +15,6 @@
 @optional
 -(void)RegBack:(ZGRegView*)ZGRegView btn:(UIButton*)btn;
 -(void)RegViewWithCameraBtn:(ZGRegView*)RegView btn:(NSInteger)btnNum;
-
 @end
 @interface ZGRegView : UIView
 

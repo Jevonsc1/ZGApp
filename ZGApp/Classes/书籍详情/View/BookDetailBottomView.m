@@ -71,4 +71,24 @@
     self.Frilabel.frame=DetailFrame.friLabelF;
     [self.Frilabel setBackgroundImage:[UIImage resizedImageWithName:@"tag2"] forState:UIControlStateNormal];
 }
+
+#pragma mark - tableview delegate
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
