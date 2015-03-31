@@ -40,6 +40,9 @@
 		FA16F1D81A790873003591E1 /* ZGNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16F1D71A790873003591E1 /* ZGNotificationController.m */; };
 		FA29675E1ACA2627008F145A /* ZGBookDetailComCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA29675D1ACA2627008F145A /* ZGBookDetailComCell.m */; };
 		FA2967601ACA2645008F145A /* ZGBookDetailComCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA29675F1ACA2645008F145A /* ZGBookDetailComCell.xib */; };
+		FA2967641ACA9C32008F145A /* ZGSendController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2967631ACA9C32008F145A /* ZGSendController.m */; };
+		FA2967711ACA9C54008F145A /* ZGTextview.m in Sources */ = {isa = PBXBuildFile; fileRef = FA29676A1ACA9C54008F145A /* ZGTextview.m */; };
+		FA2967731ACA9C55008F145A /* ZGSendPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA29676E1ACA9C54008F145A /* ZGSendPhotosView.m */; };
 		FA2AEB1A1A708FB600A88C02 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2AEB191A708FB600A88C02 /* SearchController.m */; };
 		FA2AEB1D1A70908100A88C02 /* ZGSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2AEB1C1A70908100A88C02 /* ZGSearchBar.m */; };
 		FA2AEB1F1A70935A00A88C02 /* searchbar_textfield_search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2AEB1E1A70935A00A88C02 /* searchbar_textfield_search_icon.png */; };
@@ -281,6 +284,12 @@
 		FA29675C1ACA2627008F145A /* ZGBookDetailComCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGBookDetailComCell.h; sourceTree = "<group>"; };
 		FA29675D1ACA2627008F145A /* ZGBookDetailComCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGBookDetailComCell.m; sourceTree = "<group>"; };
 		FA29675F1ACA2645008F145A /* ZGBookDetailComCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZGBookDetailComCell.xib; sourceTree = "<group>"; };
+		FA2967621ACA9C32008F145A /* ZGSendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSendController.h; sourceTree = "<group>"; };
+		FA2967631ACA9C32008F145A /* ZGSendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSendController.m; sourceTree = "<group>"; };
+		FA2967691ACA9C54008F145A /* ZGTextview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTextview.h; sourceTree = "<group>"; };
+		FA29676A1ACA9C54008F145A /* ZGTextview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTextview.m; sourceTree = "<group>"; };
+		FA29676D1ACA9C54008F145A /* ZGSendPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSendPhotosView.h; sourceTree = "<group>"; };
+		FA29676E1ACA9C54008F145A /* ZGSendPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSendPhotosView.m; sourceTree = "<group>"; };
 		FA2AEB181A708FB600A88C02 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
 		FA2AEB191A708FB600A88C02 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
 		FA2AEB1B1A70908100A88C02 /* ZGSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSearchBar.h; sourceTree = "<group>"; };
@@ -799,6 +808,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FA2967611ACA9C08008F145A /* SendComment */ = {
+			isa = PBXGroup;
+			children = (
+				FA2967691ACA9C54008F145A /* ZGTextview.h */,
+				FA29676A1ACA9C54008F145A /* ZGTextview.m */,
+				FA29676D1ACA9C54008F145A /* ZGSendPhotosView.h */,
+				FA29676E1ACA9C54008F145A /* ZGSendPhotosView.m */,
+				FA2967621ACA9C32008F145A /* ZGSendController.h */,
+				FA2967631ACA9C32008F145A /* ZGSendController.m */,
+			);
+			name = SendComment;
+			sourceTree = "<group>";
+		};
 		FA2AEB141A708F0B00A88C02 /* 搜索 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1147,6 +1169,7 @@
 		FAAFB3581A45346B00A89801 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA2967611ACA9C08008F145A /* SendComment */,
 				131674FC1AA6F41500FE10EE /* 用户页 */,
 				FAC75A101AA054960097CC55 /* 订单页 */,
 				FAC3C9A41A84F5C800B5A2FA /*  登录 */,
@@ -1812,6 +1835,7 @@
 				FA5806461A6E327D00D0CE7B /* SDWebImagePrefetcher.m in Sources */,
 				FA4FD20D1A85C67B00B65DC5 /* LoginBtnView.m in Sources */,
 				FAAFB3881A45346B00A89801 /* BorrowViewController.m in Sources */,
+				FA2967641ACA9C32008F145A /* ZGSendController.m in Sources */,
 				FA16F1B01A766D52003591E1 /* ZGBookDetailView.m in Sources */,
 				FA96D8E71A75EA3B00926DA6 /* ZGSegementView.m in Sources */,
 				FAFFE1431AAC4564005AD6B7 /* SDRotationLoopProgressView.m in Sources */,
@@ -1852,6 +1876,7 @@
 				FA68519D1A7F304F0043A2AB /* ZGOneTag.m in Sources */,
 				FAC75A381AA4A3EE0097CC55 /* AFHTTPRequestOperationManager.m in Sources */,
 				FA3F3B5F1A73481C0012ECB0 /* IMChatData.m in Sources */,
+				FA2967711ACA9C54008F145A /* ZGTextview.m in Sources */,
 				FA5806CF1A6E375900D0CE7B /* MJTypeEncoding.m in Sources */,
 				FA445D171A7DE5C600E5E8EC /* ZGUser.m in Sources */,
 				FAA9591A1A847600005140F1 /* ZGCollectBook.m in Sources */,
@@ -1898,6 +1923,7 @@
 				FAFFE13F1AAC4564005AD6B7 /* SDBaseProgressView.m in Sources */,
 				FA5806431A6E327D00D0CE7B /* SDWebImageDownloader.m in Sources */,
 				FAFFE12B1AAC2F6F005AD6B7 /* MJRefreshConst.m in Sources */,
+				FA2967731ACA9C55008F145A /* ZGSendPhotosView.m in Sources */,
 				FA4FD2221A871A6900B65DC5 /* ZGBookComFrame.m in Sources */,
 				FA16F1C81A778E4D003591E1 /* UIImage+Rectcut.m in Sources */,
 				FA16F1CE1A789A5C003591E1 /* ZGTagRect.m in Sources */,

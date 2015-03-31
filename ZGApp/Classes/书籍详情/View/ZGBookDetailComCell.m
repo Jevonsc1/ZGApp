@@ -15,8 +15,8 @@
     static  NSString  *ID = @"Jevons";
     ZGBookDetailComCell  *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[ZGBookDetailComCell alloc]init];
-        
+        cell = [[self alloc]init];
+ //       NSArray* nibs=[[NSBundle mainBundle]loadNibNamed:@"ZGBookDetailComCell" owner:nil options:nil];
 //        cell=[nibs lastObject];
         cell.icon.image=[UIImage imageNamed:@"menubar_setting"];
         cell.author.text=@"郑泓硕";
