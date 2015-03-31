@@ -9,8 +9,6 @@
 
 /**
  *  在plist文件注明view－base的bool为no，才可以使status的颜色改变
- *
- *
  */
 
 #import "TBTabBarController.h"
