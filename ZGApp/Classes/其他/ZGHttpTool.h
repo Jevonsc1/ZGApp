@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ZGHttpTool : NSObject
-//test git!!oooo
 /**
  *  发送一个POST请求
  *
