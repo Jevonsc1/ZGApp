@@ -15,6 +15,7 @@
 #import "UIImage+ImageEffects.h"
 #import "BookDetailBottomView.h"
 #import "UIImageView+WebCache.h"
+#import "ZGBookDetailComCell.h"
 
 #import "ZGBookNav.h"
 
@@ -103,7 +104,7 @@
         return 1;
     }
     else {
-      return 10;
+      return 6;
     }
     
 }
@@ -129,13 +130,12 @@
         bottomView.DetailFrame=self.TopDetailFrame;
         return bottomView;
     }
-    static NSString* ID=@"cell";
-    UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell==nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        cell.backgroundColor=[UIColor lightGrayColor];
+    else{
+        
+    ZGBookDetailComCell* cell=[ZGBookDetailComCell initWithTableView:tableView];
+     return cell;
     }
-    return cell;
+   
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -159,7 +159,7 @@
     }
     else
     {
-        return 40.0f;
+        return 80.0f;
     }
 }
 

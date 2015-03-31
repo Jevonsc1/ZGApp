@@ -38,6 +38,8 @@
 		FA16F1CE1A789A5C003591E1 /* ZGTagRect.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16F1CD1A789A5C003591E1 /* ZGTagRect.m */; };
 		FA16F1D11A78BF74003591E1 /* BookDetailBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16F1D01A78BF74003591E1 /* BookDetailBottomView.m */; };
 		FA16F1D81A790873003591E1 /* ZGNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16F1D71A790873003591E1 /* ZGNotificationController.m */; };
+		FA29675E1ACA2627008F145A /* ZGBookDetailComCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA29675D1ACA2627008F145A /* ZGBookDetailComCell.m */; };
+		FA2967601ACA2645008F145A /* ZGBookDetailComCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA29675F1ACA2645008F145A /* ZGBookDetailComCell.xib */; };
 		FA2AEB1A1A708FB600A88C02 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2AEB191A708FB600A88C02 /* SearchController.m */; };
 		FA2AEB1D1A70908100A88C02 /* ZGSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2AEB1C1A70908100A88C02 /* ZGSearchBar.m */; };
 		FA2AEB1F1A70935A00A88C02 /* searchbar_textfield_search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2AEB1E1A70935A00A88C02 /* searchbar_textfield_search_icon.png */; };
@@ -276,6 +278,9 @@
 		FA16F1D01A78BF74003591E1 /* BookDetailBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailBottomView.m; sourceTree = "<group>"; };
 		FA16F1D61A790873003591E1 /* ZGNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGNotificationController.h; sourceTree = "<group>"; };
 		FA16F1D71A790873003591E1 /* ZGNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGNotificationController.m; sourceTree = "<group>"; };
+		FA29675C1ACA2627008F145A /* ZGBookDetailComCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGBookDetailComCell.h; sourceTree = "<group>"; };
+		FA29675D1ACA2627008F145A /* ZGBookDetailComCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGBookDetailComCell.m; sourceTree = "<group>"; };
+		FA29675F1ACA2645008F145A /* ZGBookDetailComCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZGBookDetailComCell.xib; sourceTree = "<group>"; };
 		FA2AEB181A708FB600A88C02 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
 		FA2AEB191A708FB600A88C02 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
 		FA2AEB1B1A70908100A88C02 /* ZGSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSearchBar.h; sourceTree = "<group>"; };
@@ -742,6 +747,9 @@
 				FA16F1D01A78BF74003591E1 /* BookDetailBottomView.m */,
 				FAFFE1451AAC8236005AD6B7 /* ZGBookNav.h */,
 				FAFFE1461AAC8236005AD6B7 /* ZGBookNav.m */,
+				FA29675C1ACA2627008F145A /* ZGBookDetailComCell.h */,
+				FA29675D1ACA2627008F145A /* ZGBookDetailComCell.m */,
+				FA29675F1ACA2645008F145A /* ZGBookDetailComCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1734,6 +1742,7 @@
 				FA3F3B5C1A73433D0012ECB0 /* user2.png in Resources */,
 				FA5806E91A6E594F00D0CE7B /* user1.png in Resources */,
 				FA2AEB1F1A70935A00A88C02 /* searchbar_textfield_search_icon.png in Resources */,
+				FA2967601ACA2645008F145A /* ZGBookDetailComCell.xib in Resources */,
 				FA5805F21A6DF87B00D0CE7B /* zbar-back.png in Resources */,
 				FA5806E81A6E594F00D0CE7B /* user3.png in Resources */,
 				FAFFE1071AA71479005AD6B7 /* ZGUserOneShelf.xib in Resources */,
@@ -1914,6 +1923,7 @@
 				FA16F1A11A7657F9003591E1 /* UIImage+ImageEffects.m in Sources */,
 				281DDF981AC8195D00ACF81C /* ZGAccount.m in Sources */,
 				FAFFE13E1AAC4564005AD6B7 /* SDBallProgressView.m in Sources */,
+				FA29675E1ACA2627008F145A /* ZGBookDetailComCell.m in Sources */,
 				FA5806761A6E329500D0CE7B /* FMDatabaseAdditions.m in Sources */,
 				FA3F3B511A7292290012ECB0 /* IMChatToolBar.m in Sources */,
 				FA2E4C9E1A7604CF00D07866 /* ZGContactController.m in Sources */,
