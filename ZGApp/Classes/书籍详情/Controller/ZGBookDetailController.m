@@ -131,7 +131,6 @@
         return bottomView;
     }
     else{
-        
     ZGBookDetailComCell* cell=[ZGBookDetailComCell initWithTableView:tableView];
      return cell;
     }
